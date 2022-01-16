@@ -36,7 +36,6 @@
   left: 50%;
   background-color: #ffb8ca;
   transform: translate(-50%, -50%);
-  border: 1px solid green;
   padding: 10px;
   z-index: 20;
 }
