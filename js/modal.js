@@ -1,25 +1,4 @@
-// jkuery
-// $('.js-modal-open').click(function () {
-
-//     var modalName = $(this).attr('data-modal');
-//     var modal = $('.js-modal[data-modal="' + modalName + '"]');
-//     modal.addClass('is-show');
-//     $('js-modal-overlay').addClass('is-show');
-// });
-
-// $('.js-modal-close').click(function () {
-//     $(this).parent(.js - modal).removeClass('is-show');
-//     $('.js-modal-overlay.is-show').removeClass('is-show');
-// });
-        
-// $('.js-modal-overlay').click(function () {
-//     $(this).removeClass('is-show');
-//     $('.js-modal.is-show').removeClass('is-show');
-    
-// })
- 
-
-
+// ВАРИАНТ № 1
 document.addEventListener('DOMContentLoaded', function() {
    var modalButtons = document.querySelectorAll('.js-open-modal'),
        overlay      = document.querySelector('.overlay'),
@@ -49,19 +28,20 @@ document.addEventListener('DOMContentLoaded', function() {
 }); // end ready
 
 
-
-// from task 7
-// (() => {
-//   const refs = {
-//     openModalBtn: document.querySelector('[data-modal-open]'),
-//     closeModalBtn: document.querySelector('[data-modal-close]'),
-//     modal: document.querySelector('[data-modal]'),
-//   };
-
-//   refs.openModalBtn.addEventListener('click', toggleModal);
-//   refs.closeModalBtn.addEventListener('click', toggleModal);
-
-//   function toggleModal() {
-//     refs.modal.classList.toggle('is-hidden');
-//   }
-// })();
+// ВАРИАНТ № 2
+// document.addEventListener("DOMContentLoaded", () => {
+//     const refs = {
+//         openBtn: document.querySelector(".js-open-modal"),
+//         closeBtn: document.querySelector(".js-modal-close"),
+//         modalWindow: document.querySelector(".js-modal"),
+//         backdrop: document.querySelector(".overlay")
+//     };
+//     refs.closeBtn.addEventListener('click', () => {
+//         refs.modalWindow.classList.remove("active");
+//         refs.backdrop.classList.remove("active");
+//     });
+//     refs.openBtn.addEventListener('click', () => {
+//         refs.modalWindow.classList.add("active");
+//         refs.backdrop.classList.add("active");
+//     });
+// })
