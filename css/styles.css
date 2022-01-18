@@ -69,3 +69,15 @@
   letter-spacing: 0.06em;
   text-align: center;
 }
+
+.modal[data-modal="product-description-1"] {
+  background-color: #ce6fb6;
+}
+
+.modal[data-modal="product-description-2"] {
+  background-color: #75ce7c;
+}
+
+.modal[data-modal="product-description-3"] {
+  background-color: #b9b169;
+}
