@@ -51,25 +51,6 @@
   visibility: visible;
 }
 
-.modal__cross {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 25px;
-  height: 25px;
-  fill: #000000;
-  cursor: pointer;
-}
-
-.modal__title {
-  margin-top: 0;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.31;
-  letter-spacing: 0.06em;
-  text-align: center;
-}
-
 .modal[data-modal="product-description-1"] {
   background-color: #ce6fb6;
 }
@@ -80,4 +61,23 @@
 
 .modal[data-modal="product-description-3"] {
   background-color: #b9b169;
+}
+
+.modal__cross {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 18px;
+  height: 18px;
+  fill: #000000;
+  cursor: pointer;
+}
+
+.modal__title {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.31;
+  letter-spacing: 0.06em;
+  text-align: center;
 }
