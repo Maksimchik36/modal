@@ -1,4 +1,4 @@
-// ВАРИАНТ № 1
+// ВАРИАНТ № 1 РАБОТАЕТ ДЛЯ НЕСКОЛЬКИХ КНОПОК С НЕСКОЛЬКИМИ МОДАЛКАМИ
 document.addEventListener('DOMContentLoaded', function() {
    var modalButtons = document.querySelectorAll('.js-open-modal'),
        overlay      = document.querySelector('.overlay'),
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }); // end ready
 
 
-// ВАРИАНТ № 2
+// ВАРИАНТ № 2 РАБОТАЕТ ТОЛЬКО ДЛЯ 1 КНОПКИ С МОДАЛКОЙ
 // document.addEventListener("DOMContentLoaded", () => {
 //     const refs = {
 //         openBtn: document.querySelector(".js-open-modal"),
