@@ -17,12 +17,12 @@
 //     $('.js-modal.is-show').removeClass('is-show');
     
 // })
-// !function(e){"function"!=typeof e.matches&&(e.matches=e.msMatchesSelector||e.mozMatchesSelector||e.webkitMatchesSelector||function(e){for(var t=this,o=(t.document||t.ownerDocument).querySelectorAll(e),n=0;o[n]&&o[n]!==t;)++n;return Boolean(o[n])}),"function"!=typeof e.closest&&(e.closest=function(e){for(var t=this;t&&1===t.nodeType;){if(t.matches(e))return t;t=t.parentNode}return null})}(window.Element.prototype);
+ 
 
 
 document.addEventListener('DOMContentLoaded', function() {
    var modalButtons = document.querySelectorAll('.js-open-modal'),
-       overlay      = document.querySelector('#overlay-modal'),
+       overlay      = document.querySelector('.overlay'),
        closeButtons = document.querySelector('.js-modal-close');
    
    
@@ -39,9 +39,9 @@ document.addEventListener('DOMContentLoaded', function() {
       }); // end click
    }); // end foreach
     
-    closeButtons.forEach(function(cross){
-   cross.addEventListener('click', function() {
-      var parentModal = this.closest('.modal');
+    closeButtons.forEach(function(item){
+   item.addEventListener('click', function() {
+      var parentModal = this.parentNode;
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
    });
